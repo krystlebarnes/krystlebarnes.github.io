@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTML Email Hacks"
-date:   2017-02-16 07:52:01 +0000
+date:   2017-02-16 02:52:01 -0500
 ---
 
 
@@ -59,37 +59,37 @@ Here's an example of how I do an unordered list by using a table instead of `<ul
 This solution works beautifully across all clients and will look something like this:
 
 <table border="0">
-	<tr>
-		<td align="left" valign="top" style="padding: 0 0 0 25px;">
+	<tr border="0">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			&bull;
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat ab fugiat accusamus est nostrum deserunt eius nisi unde ullam numquam facere nihil nesciunt explicabo earum sapiente minima, dolorum consequuntur.
 			</p>
 		</td>
 	</tr>
-	<tr>
-		<td align="left" valign="top" style="padding: 0 0 0 25px;">
+	<tr border="0">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			&bull;
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis saepe omnis, quia culpa enim, et unde ipsam quam amet iusto debitis. Eius fugit, delectus id vitae, earum quae necessitatibus ut.
 			</p>
 		</td>
 	</tr>
-	<tr>
-		<td align="left" valign="top" style="padding: 0 0 0 25px;">
+	<tr border="0" >
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			&bull;
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur repudiandae ab reiciendis praesentium et dolore quas veritatis nam, dolorem a. Voluptatum dolores ipsum ratione hic facilis itaque, a ab.
 			</p>
@@ -101,37 +101,37 @@ This solution works beautifully across all clients and will look something like 
 If you're doing an ordered list, just make sure the width on the `<td>` tag is set and wide enough on different clients (looking at you, Yahoo), or else the characters may end up on a separate line and look something like this:
 
 <table border="0">
-	<tr>
-		<td align="left" valign="top" style="padding: 0 0 0 25px;">
+	<tr border="0" >
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			1<br>.
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repellat ab fugiat accusamus est nostrum deserunt eius nisi unde ullam numquam facere nihil nesciunt explicabo earum sapiente minima, dolorum consequuntur.
 			</p>
 		</td>
 	</tr>
-	<tr>
+	<tr border="0" >
 		<td align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			2<br>.
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis saepe omnis, quia culpa enim, et unde ipsam quam amet iusto debitis. Eius fugit, delectus id vitae, earum quae necessitatibus ut.
 			</p>
 		</td>
 	</tr>
-	<tr>
-		<td align="left" valign="top" style="padding: 0 0 0 25px;">
+	<tr border="0" >
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 25px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			3<br>.
 			</p>
 		</td>
-		<td align="left" valign="top" style="padding: 0 0 0 15px;">
+		<td border="0" align="left" valign="top" style="padding: 0 0 0 15px;">
 			<p style="font-family: Georgia, serif; font-size: 15px; line-height: 26px; color: rgb(90, 90, 90); margin: 0;">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur repudiandae ab reiciendis praesentium et dolore quas veritatis nam, dolorem a. Voluptatum dolores ipsum ratione hic facilis itaque, a ab.
 			</p>
