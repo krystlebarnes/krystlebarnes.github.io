@@ -14,27 +14,38 @@ p {
   margin: 30px 0;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
-h1,
+
+h1 {
+  font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 13px;
+  margin-top: 0px;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6,
 h6.powered_by {
-  font-family: 'Roboto Condensed', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 0;
+  font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1;
   font-size: 13px;
   margin-top: 0px;
 }
+
 a {
   color: #404040;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #b8b8b8;
+  text-decoration: none;
 }
 a img:hover,
 a img:focus {
@@ -74,20 +85,20 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #646468;
+    color: #404040;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #b8b8b8;
   }
   .navbar-custom .nav li a {
-    color: #646468;
+    color: #404040;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: #b8b8b8;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -119,14 +130,14 @@ hr.small {
   }
   .navbar-custom.is-fixed .navbar-brand:hover,
   .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
+    color: #b8b8b8;
   }
   .navbar-custom.is-fixed .nav li a {
     color: #404040;
   }
   .navbar-custom.is-fixed .nav li a:hover,
   .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
+    color: #b8b8b8;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -151,7 +162,7 @@ hr.small {
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: #646468;
+  color: #404040;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -181,7 +192,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 }
 .intro-header .post-heading h1 {
@@ -205,7 +216,7 @@ hr.small {
   font-size: 20px;
 }
 .intro-header .post-heading .meta a {
-  color: #646468;
+  color: #404040;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
@@ -221,7 +232,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #b8b8b8;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -245,7 +256,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #b8b8b8;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -325,7 +336,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #646468;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -345,9 +356,9 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
-  color: #646468;
+  background-color: #white;
+  border: 1px solid white;
+  color: #b8b8b8;
 }
 .pager {
   margin: 20px 0 0;
@@ -372,9 +383,9 @@ form .row:first-child .floating-label-form-group {
 }
 .pager li > a:hover,
 .pager li > a:focus {
-  color: #646468;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  color: #b8b8b8;
+  background-color: #f1f7f8;
+  border: 1px solid #ddd;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
@@ -387,23 +398,23 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
   color: #646468;
   text-shadow: none;
-  background: #0085a1;
+  background: #e0f2f2;
 }
 ::selection {
   color: #646468;
   text-shadow: none;
-  background: #0085a1;
+  background: #e0f2f2;
 }
 img::selection {
-  color: #646468;
+  color: #404040;
   background: transparent;
 }
 img::-moz-selection {
-  color: #646468;
+  color: #404040;
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #e0f2f2;
 }
 
 .svg-center {
