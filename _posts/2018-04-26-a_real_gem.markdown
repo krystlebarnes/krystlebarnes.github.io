@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "A Real Gem"
-date:       2018-04-26 06:17:02 +0000
+date:       2018-04-26 02:17:03 -0400
 permalink:  a_real_gem
 ---
 
 
-Wow. Ok, it's been a while since my last post. Since my last post, my husband and I moved from San Francisco to a much smaller city in southern Utah. Shortly after the move, I welcomed my first child into the world and have been adjusting to #momlife. He's pretty much the cutest and happiest baby ever. *A real gem*, one might say. Ok, that's not what this post is about. 
+Wow. Ok, it's been a while. Since my last post, my husband and I moved from San Francisco to a much smaller city in southern Utah. Shortly after the move, I welcomed my first child into the world and have been adjusting to #momlife. He's pretty much the cutest and happiest baby ever. *A real gem*, one might say. Ok, that's not what this post is about. 
 
 Becoming a stay-at-home mom and not being around all the amazing food San Francisco has to offer, I've been doing a lot more cooking and baking at home. That's why I chose to create a *real* Ruby CLI gem that pulls the top ten desserts most made today from Allrecipes.com. Looking at the desserts page from Allrecipes, one might not even notice there are actually *ten* desserts listed under the "Most Made Today" section. Viewing on my computer, I first thought there were only four, until I looked at the code! This gem makes it much easier to pull those ten recipes in an easy to read format.
 
