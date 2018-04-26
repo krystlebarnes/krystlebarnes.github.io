@@ -1,0 +1,44 @@
+---
+layout: post
+title:      "A Real Gem"
+date:       2018-04-26 06:17:02 +0000
+permalink:  a_real_gem
+---
+
+
+Wow. Ok, it's been a while since my last post. Since my last post, my husband and I moved from San Francisco to a much smaller city in southern Utah. Shortly after the move, I welcomed my first child into the world and have been adjusting to #momlife. He's pretty much the cutest and happiest baby ever. *A real gem*, one might say. Ok, that's not what this post is about. 
+
+Becoming a stay-at-home mom and not being around all the amazing food San Francisco has to offer, I've been doing a lot more cooking and baking at home. That's why I chose to create a *real* Ruby CLI gem that pulls the top ten desserts most made today from Allrecipes.com. Looking at the desserts page from Allrecipes, one might not even notice there are actually *ten* desserts listed under the "Most Made Today" section. Viewing on my computer, I first thought there were only four, until I looked at the code! This gem makes it much easier to pull those ten recipes in an easy to read format.
+
+I thought I'd share some hiccups I came across and how I overcame them. Before really looking into the code for Allrecipe's dessert page, I figured that the "Most Made Today" section would have it's own class or *something* to set it apart from the rest of the page. Nope. Nothing. Zilch. Nada. So what did I do? I stressed for a few minutes, then realized it was as easy as adding `[0]` to select the first article element with a certain class, and that would give me the top ten desserts I was looking for, and nothing else.
+
+Or so I thought. You see, I started with the following code, trying to obtain the name and URL for each dessert. 
+
+```
+  page.css("article.list-recipes")[0].css("li").each do |dessert|
+        desserts << {
+          :name => dessert.css("img").attr("title").text,
+          :url => dessert.css("a").attr("href").value
+        }
+```
+
+
+Each dessert had it's own `<li>` element, so this code should have iterated over each `<li>`, grabbing the name and URL and adding it to an array in the form of a hash, leaving me with an array of hashes that each represent a dessert. This array would be used to create new objects that represent a recipe. But what did this code do instead? It gave me this:
+
+```
+`attr': undefined method `attribute' for nil:NilClass (NoMethodError)
+```
+
+After doing some googling, I learned this error appears if those attributes or CSS selectors don't exist. I was still lost though. I tested it in pry and it was very clear in the code that these attributes and CSS selectors existed, so why was this error still coming up? I attended a study group and received a little more help and more assurance that I was understanding this error correctly, so there's gotta be something that is missing those selectors or attributes. Soon after the study group, I found the last `<li>` element within that article element, wasn't a dessert, but basically an empty `<li>` element. Of course it shared the same class as the other `<li>` elements, so I just updated my code to this:
+
+```
+  page.css("article.list-recipes")[0].css("li")[0..9].each do |dessert|
+        desserts << {
+          :name => dessert.css("img").attr("title").text,
+          :url => dessert.css("a").attr("href").value
+        }
+```
+
+Adding the `[0..9]` made it so only the first ten `<li>` elements were scraped, which worked great since there are always ten desserts on the list. After getting past that error, I was able to finally get this gem working exactly how I planned and hoped for.
+
+If you want to check it out in all it's glory: [Today's Top Desserts](https://github.com/krystlebarnes/todays-top-desserts-cli-app)
