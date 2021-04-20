@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "A little tired of your broken promises, promises"
-date:       2021-04-20 17:36:17 +0000
+title:      "A Little Tired of Your Broken Promises, Promises"
+date:       2021-04-20 13:36:17 -0400
 permalink:  a_little_tired_of_your_broken_promises_promises
 ---
 
