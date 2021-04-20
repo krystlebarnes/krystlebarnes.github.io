@@ -1,15 +1,14 @@
 # Site settings
+author: Krystle Barnes
 title: Krystle Barnes
 header-img: img/home-bg.png
 email: krystlecbarnes@gmail.com
-copyright_name: krystlebarnes
+copyright_name: Krystle Barnes
 description: > # this means to ignore newlines until "baseurl:"
   blog
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: krystlecbarnes
+twitter_username: 
 github_username:  krystlebarnes
-learn_profile: krystlebarnes
-email_username: krystlecbarnes@gmail.com
 
 # Build settings
 markdown: kramdown
